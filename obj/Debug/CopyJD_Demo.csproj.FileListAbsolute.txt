@@ -1,0 +1,5 @@
+F:\胡文鸿\练习\CopyJD_Demo\CopyJD_Demo\bin\CopyJD_Demo.dll
+F:\胡文鸿\练习\CopyJD_Demo\CopyJD_Demo\bin\CopyJD_Demo.pdb
+F:\胡文鸿\练习\CopyJD_Demo\CopyJD_Demo\obj\Debug\CopyJD_Demo.csprojResolveAssemblyReference.cache
+F:\胡文鸿\练习\CopyJD_Demo\CopyJD_Demo\obj\Debug\CopyJD_Demo.dll
+F:\胡文鸿\练习\CopyJD_Demo\CopyJD_Demo\obj\Debug\CopyJD_Demo.pdb
