@@ -12,4 +12,17 @@
         $(this).addClass("selected");
         $("#myCity").text($(this).text());
     })
+
+    //菜单
+    $("#categorys-2014 .dd-inner .item").mouseover(function () {
+        $(this).addClass("hover");
+        var index = $(this).attr("data-index");
+        $("#categorys-2014 .dorpdown-layer").show();
+        $("#category-item-" + index).addClass("hover");
+    }).mouseout(function () {
+        $(this).removeClass("hover");
+        var index = $(this).attr("data-index");
+        $("#categorys-2014 .dorpdown-layer").hide();
+        $("#category-item-" + index).removeClass("hover");
+    });
 })

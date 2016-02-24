@@ -154,6 +154,7 @@ a {
 #categorys-2014 {
     width: 210px;
     background: #B1191A;
+    position: relative;
 }
 
     #categorys-2014 .dt {
@@ -185,19 +186,19 @@ a {
         color: #fff;
     }
 
-        /*菜单鼠标移动样式*/
-        #categorys-2014 .dd-inner .item:hover {
-            color: #c81623;
-            background: #fff;
-        }
+    /*菜单鼠标移动样式*/
+    #categorys-2014 .dd-inner .hover {
+        color: #c81623;
+        background: #fff;
+    }
 
-            #categorys-2014 .dd-inner .item:hover a {
-                color: #c81623;
-            }
+    #categorys-2014 .dd-inner .item:hover a {
+        color: #c81623;
+    }
 
-        #categorys-2014 .dd-inner .item a {
-            color: #fff;
-        }
+    #categorys-2014 .dd-inner .item a {
+        color: #fff;
+    }
 
     #categorys-2014 .dd-inner h3 {
         position: absolute;
@@ -213,3 +214,25 @@ a {
         right: 10px;
         top: 9px;
     }
+
+    /*内容菜单激活后panel的样式*/
+    #categorys-2014 .dorpdown-layer {
+        
+    }
+
+    #categorys-2014 .dorpdown-layer {
+        position: absolute;
+        left: 209px;
+        top: 45px;
+        width: 999px;
+        height: 445px;
+        background: #f7f7f7;
+        border: 1px solid #b61d1d;
+        overflow: hidden;
+    }
+        #categorys-2014 .dorpdown-layer .item-sub {
+            display:none;
+        }
+        #categorys-2014 .dorpdown-layer .hover {
+            display:block;  
+        }
