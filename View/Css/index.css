@@ -393,3 +393,6 @@ ol, ul {
                 #clothes .mt ul li:last-child span {
                     background: #fff;
                 }
+    #clothes .mc li{
+        display:none;
+    }
