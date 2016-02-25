@@ -39,12 +39,17 @@
 
     //分类信息菜单 横向
     $("#clothes .mt ul a").mouseover(function () {
+        $("#clothes .mt ul a").removeClass("hover");
+        $("#clothes .mt ul").next("span").show();
+        $("#clothes .mc ul li").hide();
+        
+        var index = $(this).parent().index();
+        $("#clothes .mc ul li:eq(" + index + ")").show();
+
         $(this).addClass("hover");
         $(this).next("span").hide();
         $(this).parent().prev("li").find("span").hide();
-    }).mouseout(function () {
-        $(this).removeClass("hover");
-        $(this).next("span").show();
-        $(this).parent().prev("li").find("span").show();
     })
+
+    $("#clothes .mt ul a:first").trigger("mouseover");
 })
