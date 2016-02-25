@@ -40,7 +40,7 @@
     //分类信息菜单 横向
     $("#clothes .mt ul a").mouseover(function () {
         $("#clothes .mt ul a").removeClass("hover");
-        $("#clothes .mt ul").next("span").show();
+        $("#clothes .mt ul").find("span").show();
         $("#clothes .mc ul li").hide();
         
         var index = $(this).parent().index();
