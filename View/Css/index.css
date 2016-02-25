@@ -9,13 +9,19 @@ body {
     color: #666;
 }
 
-ol, ul {
-    list-style: none;
+h2, h3 {
+    font-family: "microsoft yahei";
+    font-weight: 400;
 }
 
 a {
+    color: #666;
     text-decoration: none;
     outline: none;
+}
+
+ol, ul {
+    list-style: none;
 }
 
 .fl {
@@ -30,7 +36,7 @@ a {
 /*特殊设置*/
 /*字体*/
 #divConMenu02 {
-    font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB","b8bf53",sans-serif;
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", b8bf53, sans-serif;
 }
 
 
@@ -61,7 +67,7 @@ a {
     padding: 0 10px;
     min-width: 75px;
     position: relative;
-    z-index: 10;
+    z-index: 12;
 }
 
 .hover .dorppart {
@@ -74,7 +80,7 @@ a {
     position: relative;
 }
 
-.dorpdown-layer {
+.dorpdown-panel {
     display: none;
     position: absolute;
     top: 29px;
@@ -82,18 +88,18 @@ a {
     padding: 10px 0 10px 10px;
     background: #fff;
     border: 1px solid #ddd;
-    z-index: 9;
+    z-index: 11;
 }
 
-.hover .dorpdown-layer {
+.hover .dorpdown-panel {
     display: block;
 }
 
-.dorpdown-layer ul {
+.dorpdown-panel ul {
     display: block;
 }
 
-    .dorpdown-layer ul li {
+    .dorpdown-panel ul li {
         display: inline-block;
         line-height: 20px;
         height: 20px;
@@ -101,7 +107,7 @@ a {
         padding: 0 8px 0 2px;
     }
 
-        .dorpdown-layer ul li a {
+        .dorpdown-panel ul li a {
             margin: 0 2px 0 8px;
             float: left;
             padding: 2px 6px;
@@ -109,11 +115,11 @@ a {
             outline: none;
         }
 
-            .dorpdown-layer ul li a:hover:not(.selected) {
+            .dorpdown-panel ul li a:hover:not(.selected) {
                 background: #F4F4F4;
             }
 
-.dorpdown-layer .selected {
+.dorpdown-panel .selected {
     background: #C81623;
     color: #fff;
 }
@@ -141,7 +147,6 @@ a {
         height: 44px;
         padding: 0 20px;
         text-align: center;
-        text-decoration: none;
         font: 400 15px/44px "microsoft yahei";
         color: #333;
     }
@@ -155,6 +160,7 @@ a {
     width: 210px;
     background: #B1191A;
     position: relative;
+    z-index: 10;
 }
 
     #categorys-2014 .dt {
@@ -192,11 +198,11 @@ a {
         background: #fff;
     }
 
-    #categorys-2014 .dd-inner .item:hover a {
-        color: #c81623;
-    }
+        #categorys-2014 .dd-inner .hover a {
+            color: #c81623;
+        }
 
-    #categorys-2014 .dd-inner .item a {
+    #categorys-2014 .dd-inner a {
         color: #fff;
     }
 
@@ -217,18 +223,93 @@ a {
 
     /*内容菜单激活后panel的样式*/
     #categorys-2014 .dorpdown-layer {
+        display: none;
         position: absolute;
         left: 209px;
         top: 45px;
         width: 999px;
-        height: 445px;
         background: #f7f7f7;
         border: 1px solid #b61d1d;
         overflow: hidden;
     }
+
         #categorys-2014 .dorpdown-layer .item-sub {
-            display:none;
+            display: none;
+            height: 465px;
         }
+
         #categorys-2014 .dorpdown-layer .hover {
-            display:block;  
+            display: block;
         }
+
+/*头条内容*/
+#focus {
+    margin: 0 auto;
+    width: 1210px;
+    position: relative;
+}
+
+    #focus .slider-nav {
+        position: relative;
+    }
+
+        #focus .slider-nav a {
+            width: 730px;
+            display: block;
+            margin: 12px 0 0 220px;
+            height: 454px;
+        }
+
+            #focus .slider-nav a img {
+                border: 0;
+            }
+
+    #focus .slider-extra {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 250px;
+    }
+
+/*新闻*/
+#news {
+    height: 200px;
+    width: 248px;
+    overflow: hidden;
+    border: solid 1px #e4e4e4;
+    border-bottom: 0;
+}
+
+    #news .mt {
+        padding: 0 15px;
+        border-bottom: 1px dotted #E8E8E7;
+        height: 43px;
+        line-height: 43px;
+    }
+
+        #news .mt h2 {
+            display: inline-block;
+        }
+
+        #news .mt a {
+            float: right;
+        }
+
+/*生活服务*/
+#lifeserv {
+    width: 248px;
+    overflow: hidden;
+    border: solid 1px #e4e4e4;
+    border-top: 1px dashed #e4e4e4;
+}
+
+    #lifeserv .mt {
+        padding: 0 15px;
+        border-bottom: 1px dotted #E8E8E7;
+        height: 43px;
+        line-height: 43px;
+    }
+
+    #lifeserv .mc {
+        height: 208px;
+    }

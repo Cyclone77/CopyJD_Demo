@@ -7,10 +7,11 @@
         $(this).removeClass('hover');
         $("#divTopMenuCon .icon").removeClass("fa-angle-up").addClass("fa-angle-down");
     });
-    $("#divTopMenuCon .dorpdown-layer li a").click(function () {
-        $("#divTopMenuCon .dorpdown-layer li a").removeClass("selected");
+    $("#divTopMenuCon .dorpdown-panel li a").click(function () {
+        $("#divTopMenuCon .dorpdown-panel li a").removeClass("selected");
         $(this).addClass("selected");
         $("#myCity").text($(this).text());
+        $("#divTopMenuCon .dorpdown").trigger("mouseout");
     })
 
     //菜单
@@ -24,5 +25,15 @@
         var index = $(this).attr("data-index");
         $("#categorys-2014 .dorpdown-layer").hide();
         $("#category-item-" + index).removeClass("hover");
+    });
+
+    $("#categorys-2014 .dorpdown-layer .item-sub").mouseover(function () {
+        var index = $(this).attr("data-id");
+        $("#categorys-2014 .dd-inner .item[data-index='" + index + "']")
+            .trigger("mouseover");
+    }).mouseout(function () {
+        var index = $(this).attr("data-id");
+        $("#categorys-2014 .dd-inner .item[data-index='" + index + "']")
+            .trigger("mouseout");
     });
 })

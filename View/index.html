@@ -18,7 +18,7 @@
                         <div class="dorppart">
                             送至：<span id="myCity">四川</span><span class="icon fa fa-angle-down"></span>
                         </div>
-                        <div class="dorpdown-layer">
+                        <div class="dorpdown-panel">
                             <ul>
                                 <li><a href="#" class="selected">北京</a></li>
                                 <li><a href="#">上海</a></li>
@@ -58,6 +58,7 @@
                         <a href="#">全部商品分类</a>
                     </div>
                     <div class="dd">
+                        <!--菜单-->
                         <div class="dd-inner">
                             <div class="item fore1" data-index="1">
                                 <h3><a href="#">家用电器</a></h3>
@@ -95,24 +96,29 @@
                                 <span class="fa fa-angle-right fa-inverse"></span>
                             </div>
                         </div>
+                        <!--菜单的面板-->
                         <div class="dorpdown-layer">
-                            <div class="item-sub" id="category-item-1">
-                                <div class="item-channels">1</div>
+                            <div class="item-sub" id="category-item-1" data-id="1">
+                                <div class="item-channels">
+                                    <div class="core">
+                                        <a href="#">家电城</a>
+                                    </div>
+                                </div>
                                 <div class="subitems"></div>
                             </div>
-                            <div class="item-sub" id="category-item-2">
+                            <div class="item-sub" id="category-item-2"  data-id="2">
                                 <div class="item-channels">2</div>
                                 <div class="subitems"></div>
                             </div>
-                            <div class="item-sub" id="category-item-3">
+                            <div class="item-sub" id="category-item-3"  data-id="3">
                                 <div class="item-channels">3</div>
                                 <div class="subitems"></div>
                             </div>
-                            <div class="item-sub" id="category-item-4">
+                            <div class="item-sub" id="category-item-4"  data-id="4">
                                 <div class="item-channels">4</div>
                                 <div class="subitems"></div>
                             </div>
-                            <div class="item-sub" id="category-item-5">
+                            <div class="item-sub" id="category-item-5"  data-id="5">
                                 <div class="item-channels">5</div>
                                 <div class="subitems"></div>
                             </div>
@@ -132,11 +138,31 @@
         <!--内容focus-->
         <div id="focus">
             <div class="slider">
-                <ul class="slider-main">
-                    <li class="slider-panel1">
-                        活动，图片
-                    </li>
-                </ul>
+                <div class="slider-nav">
+                    <a href="#">
+                        <img src="images/56cbcdd3Nd006d385.jpg" />
+                    </a>
+                </div>
+                <div class="slider-extra">
+                    <!--新闻-->
+                    <div id="news">
+                        <div class="mt">
+                            <h2>京东快报</h2>
+                            <a href="#">
+                                <span class="tit">更多</span>
+                                <span class="fa fa-angle-right"></span>
+                            </a>
+                        </div>
+                        <div class="mc"></div>
+                    </div>
+                    <!--生活服务-->
+                    <div id="lifeserv">
+                        <div class="mt">
+                            <h2>生活服务</h2>
+                        </div>
+                        <div class="mc"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
