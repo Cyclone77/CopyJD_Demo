@@ -36,4 +36,15 @@
         $("#categorys-2014 .dd-inner .item[data-index='" + index + "']")
             .trigger("mouseout");
     });
+
+    //分类信息菜单 横向
+    $("#clothes .mt ul a").mouseover(function () {
+        $(this).addClass("hover");
+        $(this).next("span").hide();
+        $(this).parent().prev("li").find("span").hide();
+    }).mouseout(function () {
+        $(this).removeClass("hover");
+        $(this).next("span").show();
+        $(this).parent().prev("li").find("span").show();
+    })
 })

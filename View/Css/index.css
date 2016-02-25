@@ -41,7 +41,7 @@ ol, ul {
 
 
 
-/*菜单特殊css  --Start*/
+/*顶部功能菜单*/
 #divTopMenuCon {
     width: 100%;
     height: 30px;
@@ -124,10 +124,9 @@ ol, ul {
     color: #fff;
 }
 
-/*菜单特殊css --End*/
 
 
-/*内容菜单*/
+/*全部商品分类 内容菜单*/
 #divConMenu02 {
     height: 44px;
     border-bottom: 2px solid #B1191A;
@@ -242,7 +241,8 @@ ol, ul {
             display: block;
         }
 
-/*头条内容*/
+
+/*内容focus*/
 #focus {
     margin: 0 auto;
     width: 1210px;
@@ -271,7 +271,6 @@ ol, ul {
         width: 250px;
     }
 
-/*新闻*/
 #news {
     height: 200px;
     width: 248px;
@@ -295,7 +294,6 @@ ol, ul {
             float: right;
         }
 
-/*生活服务*/
 #lifeserv {
     width: 248px;
     overflow: hidden;
@@ -313,3 +311,85 @@ ol, ul {
     #lifeserv .mc {
         height: 208px;
     }
+
+
+
+/*分类信息菜单 横向*/
+.clearfix {
+    margin-top: 10px;
+}
+
+#clothes {
+    width: 1210px;
+    height: 670px;
+    margin: 0 auto;
+}
+
+    #clothes .mt {
+        border-bottom: 1px solid #c81623;
+        overflow: visible;
+        position: relative;
+        height: 36px;
+    }
+
+        #clothes .mt span {
+            height: 36px;
+            line-height: 36px;
+            float: left;
+        }
+
+        #clothes .mt h2 {
+            float: left;
+            height: 36px;
+            line-height: 36px;
+            margin-left: 5px;
+        }
+
+        #clothes .mt ul {
+            float: right;
+            border: solid 1px #ededed;
+            border-bottom: 0 none;
+            height: 34px;
+            line-height: 34px;
+            z-index: 1;
+        }
+
+            #clothes .mt ul li {
+                display: inline;
+                position: relative;
+            }
+
+                #clothes .mt ul li a {
+                    float: left;
+                    height: 34px;
+                    padding: 0 16px;
+                    line-height: 34px;
+                    background: #fff;
+                    border-left: solid 1px #fff;
+                    border-right: solid 1px #fff;
+                    white-space: nowrap;
+                }
+
+                    #clothes .mt ul li .hover {
+                        border-left: solid 1px #c81623;
+                        border-right: solid 1px #c81623;
+                        border-top: solid 3px #c81623;
+                        white-space: nowrap;
+                        height: 33px;
+                        line-height: 30px;
+                        color: #c81623;
+                    }
+
+                #clothes .mt ul li span {
+                    position: absolute;
+                    width: 1px;
+                    background: #ccc;
+                    overflow: hidden;
+                    height: 14px;
+                    top: 10px;
+                    right: 0;
+                }
+
+                #clothes .mt ul li:last-child span {
+                    background: #fff;
+                }
